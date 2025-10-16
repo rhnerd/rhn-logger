@@ -6,7 +6,7 @@ Provides **log levels**, **colored stderr output**, and optional **file logging*
 ---
 
 ## Features
-- Header-only (`#include "log.h"`)
+- Header-only (`#include "rhn-logger.h"`)
 - Log levels: **DEBUG / INFO / WARN / ERROR / NONE**
 - Colored logs to **stderr** (ANSI escape codes)
 - Optional **file logging** (`LOG_FILE("app.log", "w")` or `"a"`)
