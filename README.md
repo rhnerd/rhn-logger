@@ -17,7 +17,7 @@ Provides **log levels**, **colored stderr output**, and optional **file logging*
 
 ## Quick Start
 
-1. Copy `log.h` into your project  
+1. Copy `rhn_logger.h` into your project  
 2. Include and log:
 
 ```c
