@@ -6,12 +6,12 @@ Provides **log levels**, **colored stderr output**, and optional **file logging*
 ---
 
 ## Features
-- ✅ Header-only (`#include "log.h"`)
-- ✅ Log levels: **DEBUG / INFO / WARN / ERROR / NONE**
-- ✅ Colored logs to **stderr** (ANSI escape codes)
-- ✅ Optional **file logging** (`LOG_FILE("app.log", "w")` or `"a"`)
-- ✅ Compact format: `[HH:MM:SS] LEVEL message`
-- ✅ No external dependencies
+- Header-only (`#include "log.h"`)
+- Log levels: **DEBUG / INFO / WARN / ERROR / NONE**
+- Colored logs to **stderr** (ANSI escape codes)
+- Optional **file logging** (`LOG_FILE("app.log", "w")` or `"a"`)
+- Compact format: `[HH:MM:SS] LEVEL message`
+- No external dependencies
 
 ---
 
@@ -85,18 +85,10 @@ LOG_ERROR(fmt, ...);
 
 ---
 
-## Philosophy (Why so simple?)
-
-- Single-header, zero deps, drop-in.
-- Works out of the box (stderr w/ colors).  
-- File logging is optional (`LOG_FILE("app.log","w/a")`).  
-- No hidden init frameworks, no threading overhead.
-
----
 
 ## Thread Safety
 
-⚠️ `rhn-logger` is **not thread-safe by design**.  
+`rhn-logger` is **not thread-safe**.  
 If you need thread safety, wrap calls with a mutex in your app:
 
 ```c
