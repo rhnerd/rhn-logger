@@ -21,7 +21,7 @@ Provides **log levels**, **colored stderr output**, and optional **file logging*
 2. Include and log:
 
 ```c
-#include "log.h"
+#include "rhn-logger.h"
 
 int main(void) {
     LOG_INFO("stderr only, no file yet");
